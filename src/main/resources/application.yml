@@ -1,0 +1,27 @@
+server:
+  servlet:
+    context-path: /fayaospace
+
+spring:
+  datasource:
+    url: jdbc:mysql://103.1.221.175:3308/fayaospace?characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 25262728
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+jwt:
+  secret-key: fundodo_fayaospace
+  access-token-validity: 4
+
