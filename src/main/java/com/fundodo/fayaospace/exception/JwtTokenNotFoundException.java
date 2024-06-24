@@ -10,6 +10,6 @@ public class JwtTokenNotFoundException extends ApiException {
     }
 
     public JwtTokenNotFoundException(Object body) {
-        super(body);//
+        super(body);
     }
 }
